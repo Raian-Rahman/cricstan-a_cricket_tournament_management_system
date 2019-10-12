@@ -4,10 +4,13 @@
  * and open the template in the editor.
  */
 package sportscard;
-
 /**
  *
  * @author raian
+ * @author rizvi_hasan
+ * @author abdullah_al_farhad
+ * @author shahriar_nur_nahin
+ * 
  */
 public class Player {
     private String p_name;

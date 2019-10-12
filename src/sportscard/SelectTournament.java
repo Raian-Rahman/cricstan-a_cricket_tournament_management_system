@@ -1,7 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+ *
+ * @author raian
+ * @author rizvi_hasan
+ * @author abdullah_al_farhad
+ * @author shahriar_nur_nahin
+ * 
  */
 package sportscard;
 
@@ -101,6 +104,9 @@ public class SelectTournament extends javax.swing.JFrame {
 
     private void ExistingTournamentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExistingTournamentActionPerformed
         // TODO add your handling code here:
+        TournamentExplorer obj = new TournamentExplorer();
+        obj.setVisible(true);
+        dispose();
     }//GEN-LAST:event_ExistingTournamentActionPerformed
 
     /**

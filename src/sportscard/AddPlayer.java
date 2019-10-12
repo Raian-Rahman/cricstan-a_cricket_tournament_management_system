@@ -12,6 +12,10 @@ import javax.swing.JOptionPane;
 /**
  *
  * @author raian
+ * @author rizvi_hasan
+ * @author abdullah_al_farhad
+ * @author shahriar_nur_nahin
+ * 
  */
 public class AddPlayer extends javax.swing.JFrame {
     String tourniName;
@@ -294,19 +298,11 @@ public class AddPlayer extends javax.swing.JFrame {
         System.out.println(query1);
         Database db1 = new Database();
         int r1 = 0;
-        try {
-            r1 = db1.getCountfromTable(query1);
-        } catch (InterruptedException ex) {
-            Logger.getLogger(AddPlayer.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        r1 = db1.getCountfromTable(query1);
         String query2 = "select minimumplayer from tournament where tournamentID = '" + this.tourniName + "'";
         System.out.println(query1);
         int r2 = 0;
-        try {
-            r2 = db1.getCountfromTable(query2);
-        } catch (InterruptedException ex) {
-            Logger.getLogger(AddPlayer.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        r2 = db1.getCountfromTable(query2);
         this.res44 = r2-r1;
         
         String message = this.res44 + " players remaining" ;

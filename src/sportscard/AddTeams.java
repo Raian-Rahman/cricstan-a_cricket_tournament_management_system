@@ -12,6 +12,10 @@ import javax.swing.JOptionPane;
 /**
  *
  * @author raian
+ * @author rizvi_hasan
+ * @author abdullah_al_farhad
+ * @author shahriar_nur_nahin
+ * 
  */
 public final  class AddTeams extends javax.swing.JFrame {
 
@@ -252,19 +256,11 @@ public final  class AddTeams extends javax.swing.JFrame {
          int count =0;
             String query = "select count(teamid) from team where tournamentid = '" + getTournamentID()+  "'";
             Database db = new Database();
-        try {
             count =db.getCountfromTable(query);
-        } catch (InterruptedException ex) {
-            Logger.getLogger(AddTeams.class.getName()).log(Level.SEVERE, null, ex);
-        }
       //      Database db2 = new Database();
             query = "select numberofteams from tournament where tournamentid = '" + getTournamentID() + "'";
             int c2 = 0;
-        try {
             c2 = db.getCountfromTable(query);
-        } catch (InterruptedException ex) {
-            Logger.getLogger(AddTeams.class.getName()).log(Level.SEVERE, null, ex);
-        }
             int cc = c2-count;
             //if(cc==0)   JOptionPane.showMessageDialog(rootPane, "Done adding");
             JOptionPane.showMessageDialog(rootPane,Integer.toString(cc) + "remaining");

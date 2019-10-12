@@ -8,6 +8,10 @@ package sportscard;
 /**
  *
  * @author raian
+ * @author rizvi_hasan
+ * @author abdullah_al_farhad
+ * @author shahriar_nur_nahin
+ * 
  */
 public class Teams {
     private String teamName;
