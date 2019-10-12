@@ -4,17 +4,16 @@
  * @author rizvi_hasan
  * @author abdullah_al_farhad
  * @author shahriar_nur_nahin
- * 
+ *
  */
-
-
-
 package sportscard;
+
 import java.sql.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
+public class Database {
 
-public class Database{
-    
     String className = "oracle.jdbc.driver.OracleDriver";
     String URL = "jdbc:oracle:thin:@localhost:1521:xe";
     String username;
@@ -23,149 +22,177 @@ public class Database{
     String dbpassword = "cricstan";
     Statement stmt;
     Connection con;
-    Database()
-    {
+
+    Database() {
         //System.out.println("haha");
-        try{
+        try {
             Class.forName(this.className);
             con = DriverManager.getConnection(URL, dbusername, dbpassword);
-            stmt  = con.createStatement();
+            stmt = con.createStatement();
             String query = "select username, password from logininfos";
             ResultSet rs = stmt.executeQuery(query);
-            
-            while(rs.next())
-            {
-                
+
+            while (rs.next()) {
+
                 this.username = rs.getString(1);
                 this.password = rs.getString(2);
-               // System.out.println(username+password);
+                // System.out.println(username+password);
             }
-        }catch(ClassNotFoundException | SQLException e)
-        {
+        } catch (ClassNotFoundException | SQLException e) {
             System.out.println(e);
         }
     }
-   String getusername()
-    {
+
+    String getusername() {
         return this.username;
     }
-    String getpassword()
-    {
+
+    String getpassword() {
         return this.password;
     }
-     void setpassword(String password) 
-    {
+
+    void setpassword(String password) {
         this.password = password;
-        try{
-            String query = "update logininfos set password =  '" + password  + "' where username = '" + this.username+"'"  ;
+        try {
+            String query = "update logininfos set password =  '" + password + "' where username = '" + this.username + "'";
             ResultSet rs = stmt.executeQuery(query);
-           // Thread.sleep(1000);
-        }catch(SQLException e)
-        {
+            // Thread.sleep(1000);
+        } catch (SQLException e) {
             System.out.println(e);
         }
     }
-    
-    int insertToTable(String query) throws InterruptedException
-    {
-        int rs=0;
-        try{
-          //  System.out.print(query);
+
+    int insertToTable(String query) throws InterruptedException {
+        int rs = 0;
+        try {
+            //  System.out.print(query);
             rs = stmt.executeUpdate(query);
             System.out.println(rs + " rows affected");
             con.commit();
             Thread.sleep(10);
-        }
-        catch(SQLException e)
-        {
+        } catch (SQLException e) {
             System.out.println(e);
         }
         return rs;
     }
-    int getCountfromTable(String query) 
-    {
-        ResultSet rs=null;
-        int res =0;
-        try{
-            
+
+    int getCountfromTable(String query) {
+        ResultSet rs = null;
+        int res = 0;
+        try {
+
             rs = stmt.executeQuery(query);
-            while(rs.next())
-            {
+            while (rs.next()) {
                 res = rs.getInt(1);
             }
             System.out.println(res + " rows affected");
-           // Thread.sleep(1000);
-        }
-        catch( SQLException e)
-        {
+            // Thread.sleep(1000);
+        } catch (SQLException e) {
             System.out.println(e);
         }
-        
+
         return res;
     }
-    
-    String selectHomeTeamName(String matchID) throws SQLException 
-    {
-        ResultSet rs =null;
-        int res =0;
+
+    String selectHomeTeamName(String matchID) throws SQLException {
+        ResultSet rs = null;
+        int res = 0;
         String qu = "select hometeam from fixture where matchid = '"
-                    + matchID  +"' ";
+                + matchID + "' ";
         rs = stmt.executeQuery(qu);
         String ret = "";
-        while(rs.next())
-        {
+        while (rs.next()) {
             ret = rs.getString(1);
         }
         qu = "select teamname from team where teamid = '"
                 + ret + "'";
         rs = stmt.executeQuery(qu);
-        while(rs.next())
-        {
+        while (rs.next()) {
             ret = rs.getString(1);
         }
         return ret;
     }
-    String selectAwayTeamName(String matchID) throws SQLException
-    {
-        ResultSet rs =null;
-        int res =0;
+
+    String selectAwayTeamName(String matchID) throws SQLException {
+        ResultSet rs = null;
+        int res = 0;
         String qu = "select awayteam from fixture where matchid = '"
-                    + matchID  +"' ";
+                + matchID + "' ";
         rs = stmt.executeQuery(qu);
         String ret = "";
-        while(rs.next())
-        {
+        while (rs.next()) {
             ret = rs.getString(1);
         }
         qu = "select teamname from team where teamid = '"
                 + ret + "'";
         rs = stmt.executeQuery(qu);
-        while(rs.next())
-        {
+        while (rs.next()) {
             ret = rs.getString(1);
         }
         return ret;
     }
-    
-    ResultSet getData(String query){
-        ResultSet rs=null;
-        try{
-            rs = stmt.executeQuery(query);
+
+    String selectHomeTeam(String matchID) throws SQLException {
+        ResultSet rs = null;
+        int res = 0;
+        String qu = "select hometeam from fixture where matchid = '"
+                + matchID + "' ";
+        rs = stmt.executeQuery(qu);
+        String ret = "";
+        while (rs.next()) {
+            ret = rs.getString(1);
         }
-        catch(SQLException e){
+        return ret;
+    }
+
+    String selctAwayTeam(String matchID) throws SQLException {
+        ResultSet rs = null;
+        int res = 0;
+        String qu = "select awayteam from fixture where matchid = '"
+                + matchID + "' ";
+        rs = stmt.executeQuery(qu);
+        String ret = "";
+        while (rs.next()) {
+            ret = rs.getString(1);
+        }
+        return ret;
+    }
+
+    ResultSet getData(String query) {
+        ResultSet rs = null;
+        try {
+            rs = stmt.executeQuery(query);
+        } catch (SQLException e) {
             System.out.println(e);
         }
         return rs;
     }
-    void updateResult(String matchID,String teamName) throws SQLException
-    {
+
+    void updateResult(String matchID, String teamName) throws SQLException {
         int res;
         String query = "update fixture" + " set result = '" + teamName + "' " + " where matchid = '" + matchID + "'";
         res = stmt.executeUpdate(query);
-        if(res!=1)
-        {
+        if (res != 1) {
             System.out.println("Error in updating");
         }
-      //  return res;
+        con.commit();
+        //  return res;
     }
+
+    void updatePoint(String teamID, int poi) {
+        int res = 0;
+        try {
+            String query = "update team "
+                    + "set played = played+1 , point = point+ " + poi
+                    + "where teamid = '" + teamID + "'";
+            System.out.println(query);
+            res = stmt.executeUpdate(query);
+            System.out.println(res);
+
+        } catch (SQLException e) {
+            System.out.println(e);
+        }
+        System.out.println(res + " rows affected");
+    }
+
 }

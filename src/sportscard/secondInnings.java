@@ -1,7 +1,6 @@
 package sportscard;
 
-
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
@@ -363,22 +362,16 @@ public class secondInnings extends javax.swing.JFrame {
         {
             if(illegalButton.isSelected() && flag)
             {
-                if(wide.isSelected() || noball.isSelected() && flag)
-                {
-                    flag = true;
-                }
-                else flag = false;
+                flag = wide.isSelected() || noball.isSelected() && flag;
                 if(dismissalButton.isSelected() && flag)
                 {
-                    if(dismissalBox.getSelectedIndex() == 3)    flag = true;
-                    else                                        flag = false;
+                    flag = dismissalBox.getSelectedIndex() == 3;
                 }
             }
             if(legalButton.isSelected() && dismissalButton.isSelected() && flag)
             {
 
-                if( (dismissalBox.getSelectedIndex() < 3) && (runBox.getSelectedIndex() != 0) ) flag = false;
-                else flag =true;
+                flag = !((dismissalBox.getSelectedIndex() < 3) && (runBox.getSelectedIndex() != 0));
             }
 
         }
@@ -418,16 +411,19 @@ public class secondInnings extends javax.swing.JFrame {
                 cr = 7;
             }
             String tm1 = null,tm2 = null;
+            String team1=null,team2=null;
             int winner = -1;
             if(type==0)
             {
                 try {
                     tm1 = db.selectHomeTeamName(matchID);
+                    team1 = db.selectHomeTeam(matchID);
                 } catch (SQLException ex) {
                     Logger.getLogger(secondInnings.class.getName()).log(Level.SEVERE, null, ex);
                 }
                 try {
                     tm2 = db.selectAwayTeamName(matchID);
+                    team2 = db.selctAwayTeam(matchID);
                 } catch (SQLException ex) {
                     Logger.getLogger(secondInnings.class.getName()).log(Level.SEVERE, null, ex);
                 }
@@ -436,11 +432,13 @@ public class secondInnings extends javax.swing.JFrame {
             {
                 try {
                     tm2 = db.selectHomeTeamName(matchID);
+                    team2 =  db.selectHomeTeam(matchID);
                 } catch (SQLException ex) {
                     Logger.getLogger(secondInnings.class.getName()).log(Level.SEVERE, null, ex);
                 }
                 try {
                     tm1 = db.selectAwayTeamName(matchID);
+                    team1 = db.selctAwayTeam(matchID);
                 } catch (SQLException ex) {
                     Logger.getLogger(secondInnings.class.getName()).log(Level.SEVERE, null, ex);
                 }
@@ -449,16 +447,17 @@ public class secondInnings extends javax.swing.JFrame {
             {
                 if(dismissalButton.isSelected())
                 {
+                    run = run + cr;
                     wkt = wkt + 1;
                     if(wkt >= maxW)
                     {
                         JOptionPane.showMessageDialog(rootPane,"Innings over");
-                        if(run<targe)
+                        if(run<targe-1)
                         {
                             JOptionPane.showMessageDialog(rootPane, tm1 + " won");
                             winner =1;
                         }
-                        else if(run>targe)
+                        else if(run>targe-1)
                         { 
                            JOptionPane.showMessageDialog(rootPane, tm2 +" won");
                            winner = 2;
@@ -472,9 +471,12 @@ public class secondInnings extends javax.swing.JFrame {
                         // go to next innings
                     }
                 }
-                run = run + cr;
+                else{
+                    run = run + cr;
+                }
+                
                 ball_no = ball_no + 1;
-                if(run > targe) 
+                if(run > targe-1) 
                 {
                     JOptionPane.showMessageDialog(rootPane, tm2+" won");
                     winner = 2;
@@ -483,12 +485,12 @@ public class secondInnings extends javax.swing.JFrame {
                 {
                     
                     JOptionPane.showMessageDialog(rootPane,"Innings over and team1 won");
-                    if(run<targe)
+                    if(run<targe-1)
                         {
                             JOptionPane.showMessageDialog(rootPane,tm1 +" won");
                             winner = 1;
                         }
-                        else if(run>targe)
+                        else if(run>targe-1)
                         { 
                            JOptionPane.showMessageDialog(rootPane,tm2 + " won");
                            winner = 2;
@@ -508,7 +510,7 @@ public class secondInnings extends javax.swing.JFrame {
                 {
                     run = run + 1;
                 }
-                if(run > targe) 
+                if(run > targe-1) 
                 {
                     JOptionPane.showMessageDialog(rootPane,tm2 + "won");
                     winner = 2;
@@ -521,12 +523,12 @@ public class secondInnings extends javax.swing.JFrame {
                         JOptionPane.showMessageDialog(rootPane, "Innings over and " + tm1 + " won");
                         winner = 1;
                     }
-                    if(run<targe)
+                    if(run<targe-1)
                         {
                             JOptionPane.showMessageDialog(rootPane,tm1 + " won");
                             winner = 1;
                         }
-                        else if(run>targe)
+                        else if(run>targe-1)
                         { 
                            JOptionPane.showMessageDialog(rootPane,tm2 + " won");
                            winner = 2;
@@ -549,6 +551,8 @@ public class secondInnings extends javax.swing.JFrame {
                     } catch (SQLException ex) {
                         Logger.getLogger(secondInnings.class.getName()).log(Level.SEVERE, null, ex);
                     }
+                    db.updatePoint(team1, 1);
+                    db.updatePoint(team2,1);
                 }
                         break;
                     case 1:
