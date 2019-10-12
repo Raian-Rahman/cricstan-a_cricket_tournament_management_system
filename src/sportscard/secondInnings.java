@@ -578,10 +578,11 @@ public class secondInnings extends javax.swing.JFrame {
                 }
                         break;
                 }
-                JOptionPane.showMessageDialog(rootPane, "Going Back to tournament Page");
-                TournamentExplorer obj = new TournamentExplorer();
+                String t_id = db.getTournamentID(matchID);
+                Standings obj = new Standings(t_id);
                 obj.setVisible(true);
                 dispose();
+                
             }
             cRunLabel.setText(Integer.toString(run));
             wicketLabel.setText(Integer.toString(wkt));

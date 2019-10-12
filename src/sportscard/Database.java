@@ -194,5 +194,21 @@ public class Database {
         }
         System.out.println(res + " rows affected");
     }
+    String getTournamentID(String t_name)
+    {
+        String res = null;
+        try{
+            String query = "select tournamentid from fixture where matchID = '" + t_name + "'";
+            ResultSet rs = stmt.executeQuery(query);
+            while(rs.next())
+            {
+                res = rs.getString(1);
+            }
+        }catch(Exception e)
+        {
+            System.out.println(e);
+        }
+        return res;
+    }
 
 }
