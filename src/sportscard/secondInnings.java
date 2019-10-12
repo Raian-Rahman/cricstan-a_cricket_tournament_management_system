@@ -562,6 +562,8 @@ public class secondInnings extends javax.swing.JFrame {
                     } catch (SQLException ex) {
                         Logger.getLogger(secondInnings.class.getName()).log(Level.SEVERE, null, ex);
                     }
+                    db.updatePoint(team1, 3);
+                    db.updatePoint(team2,0);
                 }
                         break;
                     default:
@@ -571,6 +573,8 @@ public class secondInnings extends javax.swing.JFrame {
                     } catch (SQLException ex) {
                         Logger.getLogger(secondInnings.class.getName()).log(Level.SEVERE, null, ex);
                     }
+                    db.updatePoint(team2, 3);
+                    db.updatePoint(team1, 0);
                 }
                         break;
                 }

@@ -40,7 +40,7 @@ public class Teams {
         {
             String query = "";
             //insert into team values('teamID','
-            query = "insert into team values ('" + teamID + "' , '" + teamName + "' , '" + shortName + "' , '" + t_id + "')";
+            query = "insert into team values ('" + teamID + "' , '" + teamName + "' , '" + shortName + "' , '" + t_id + "' , 0 , 0)";
             System.out.println(query);
             Database db = new Database();
             int res = db.insertToTable(query);
