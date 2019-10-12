@@ -55,7 +55,7 @@ public class FixtureShow extends javax.swing.JFrame {
             }
         });
 
-        matchTable.setFont(new java.awt.Font("Felix Titling", 0, 12)); // NOI18N
+        matchTable.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         matchTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -105,10 +105,10 @@ public class FixtureShow extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(matchTable);
 
-        jLabel1.setFont(new java.awt.Font("Felix Titling", 0, 12)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         jLabel1.setText("Enter Match ID");
 
-        match_jd.setFont(new java.awt.Font("Felix Titling", 0, 12)); // NOI18N
+        match_jd.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         match_jd.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         match_jd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -116,7 +116,7 @@ public class FixtureShow extends javax.swing.JFrame {
             }
         });
 
-        submit.setFont(new java.awt.Font("Felix Titling", 1, 14)); // NOI18N
+        submit.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         submit.setText("SUBMIT");
         submit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -150,7 +150,7 @@ public class FixtureShow extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(match_jd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 7, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(submit)
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 317, javax.swing.GroupLayout.PREFERRED_SIZE)

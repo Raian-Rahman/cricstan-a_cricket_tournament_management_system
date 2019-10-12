@@ -74,7 +74,6 @@ public final  class AddTeams extends javax.swing.JFrame {
         teamName = new javax.swing.JLabel();
         TeamName = new javax.swing.JTextField();
         Validate = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
         some = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         ShortName = new javax.swing.JTextField();
@@ -87,12 +86,12 @@ public final  class AddTeams extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Add New Teams");
 
-        teamName.setFont(new java.awt.Font("Felix Titling", 0, 14)); // NOI18N
+        teamName.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         teamName.setText("Team Name");
 
-        TeamName.setFont(new java.awt.Font("Felix Titling", 0, 12)); // NOI18N
+        TeamName.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
 
-        Validate.setFont(new java.awt.Font("Felix Titling", 0, 14)); // NOI18N
+        Validate.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         Validate.setText("Validate and add");
         Validate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -100,30 +99,22 @@ public final  class AddTeams extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setFont(new java.awt.Font("Felix Titling", 0, 14)); // NOI18N
-        jButton2.setText("Add players");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-
         some.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
-        jLabel1.setFont(new java.awt.Font("Felix Titling", 0, 12)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         jLabel1.setText("Short Name");
 
-        ShortName.setFont(new java.awt.Font("Felix Titling", 0, 12)); // NOI18N
+        ShortName.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
 
-        jLabel2.setFont(new java.awt.Font("Felix Titling", 3, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         jLabel2.setText("TeamID");
 
         t_name.setFont(new java.awt.Font("Felix Titling", 1, 14)); // NOI18N
         t_name.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
-        TeamID.setFont(new java.awt.Font("Felix Titling", 1, 12)); // NOI18N
+        TeamID.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
 
-        jButton1.setFont(new java.awt.Font("Felix Titling", 0, 14)); // NOI18N
+        jButton1.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         jButton1.setText("Go Back To Home");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -135,10 +126,6 @@ public final  class AddTeams extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(Validate)
-                .addGap(232, 232, 232))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(81, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -163,12 +150,12 @@ public final  class AddTeams extends javax.swing.JFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
                         .addGap(52, 52, 52)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton2)
-                            .addComponent(TournamentName, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(TournamentName, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap())
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 324, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(Validate, javax.swing.GroupLayout.PREFERRED_SIZE, 322, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 324, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(54, 54, 54))))
         );
         layout.setVerticalGroup(
@@ -200,10 +187,8 @@ public final  class AddTeams extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(10, 10, 10)
                         .addComponent(TeamID, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Validate)
-                    .addComponent(jButton2))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 25, Short.MAX_VALUE)
+                .addComponent(Validate)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton1)
                 .addGap(11, 11, 11))
@@ -236,17 +221,6 @@ public final  class AddTeams extends javax.swing.JFrame {
             this.flag = true;
         }
     }//GEN-LAST:event_ValidateActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-        if(this.flag == true)
-        {
-            //JOptionPane.showMessageDialog(rootPane,"Added to database");
-           AddPlayer newPlayer = new AddPlayer(getTournamentID(),getTeamID());
-           newPlayer.setVisible(true);
-           dispose();
-        }
-    }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
@@ -326,7 +300,6 @@ public final  class AddTeams extends javax.swing.JFrame {
     private javax.swing.JLabel TournamentName;
     private javax.swing.JButton Validate;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;

@@ -4,23 +4,9 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/raian/OneDrive/Documents/NetBeansProjects/SportsCard/src/sportscard/frstinningsscore.java</file>
-            <file>file:/C:/Users/raian/OneDrive/Documents/NetBeansProjects/SportsCard/src/sportscard/Teams.java</file>
-            <file>file:/C:/Users/raian/OneDrive/Documents/NetBeansProjects/SportsCard/src/sportscard/LoginPage.java</file>
-            <file>file:/C:/Users/raian/OneDrive/Documents/NetBeansProjects/SportsCard/src/sportscard/SelectTournament.java</file>
+            <file>file:/C:/Users/raian/OneDrive/Documents/NetBeansProjects/SportsCard/src/sportscard/Standings.java</file>
             <file>file:/C:/Users/raian/OneDrive/Documents/NetBeansProjects/SportsCard/src/sportscard/TournamentExplorer.java</file>
-            <file>file:/C:/Users/raian/OneDrive/Documents/NetBeansProjects/SportsCard/src/sportscard/FixtureShow.java</file>
             <file>file:/C:/Users/raian/OneDrive/Documents/NetBeansProjects/SportsCard/src/sportscard/SetInningsAndTeam.java</file>
-            <file>file:/C:/Users/raian/OneDrive/Documents/NetBeansProjects/SportsCard/src/sportscard/Match.java</file>
-            <file>file:/C:/Users/raian/OneDrive/Documents/NetBeansProjects/SportsCard/src/sportscard/NewTournament.java</file>
-            <file>file:/C:/Users/raian/OneDrive/Documents/NetBeansProjects/SportsCard/src/sportscard/AddTeams.java</file>
-            <file>file:/C:/Users/raian/OneDrive/Documents/NetBeansProjects/SportsCard/src/sportscard/Player.java</file>
-            <file>file:/C:/Users/raian/OneDrive/Documents/NetBeansProjects/SportsCard/src/sportscard/InitializeMatch.java</file>
-            <file>file:/C:/Users/raian/OneDrive/Documents/NetBeansProjects/SportsCard/src/secondInnings.java</file>
-            <file>file:/C:/Users/raian/OneDrive/Documents/NetBeansProjects/SportsCard/src/sportscard/UserNameandPassword.java</file>
-            <file>file:/C:/Users/raian/OneDrive/Documents/NetBeansProjects/SportsCard/src/sportscard/SportsCard.java</file>
-            <file>file:/C:/Users/raian/OneDrive/Documents/NetBeansProjects/SportsCard/src/sportscard/Tournament.java</file>
-            <file>file:/C:/Users/raian/OneDrive/Documents/NetBeansProjects/SportsCard/src/sportscard/AddPlayer.java</file>
-            <file>file:/C:/Users/raian/OneDrive/Documents/NetBeansProjects/SportsCard/src/sportscard/Database.java</file>
         </group>
     </open-files>
 </project-private>

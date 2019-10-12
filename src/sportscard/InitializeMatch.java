@@ -66,32 +66,34 @@ public class InitializeMatch extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setFont(new java.awt.Font("Felix Titling", 0, 12)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         jLabel1.setText("Match ID");
 
-        MLabel.setFont(new java.awt.Font("Felix Titling", 0, 14)); // NOI18N
+        MLabel.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
 
-        jLabel2.setFont(new java.awt.Font("Felix Titling", 0, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         jLabel2.setText("Home Team");
 
-        HTeamLabel.setFont(new java.awt.Font("Felix Titling", 0, 12)); // NOI18N
+        HTeamLabel.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
 
-        jLabel3.setFont(new java.awt.Font("Felix Titling", 0, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         jLabel3.setText("Away Team");
 
-        ATeamLabel.setFont(new java.awt.Font("Felix Titling", 0, 12)); // NOI18N
+        ATeamLabel.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
 
-        jLabel4.setFont(new java.awt.Font("Felix Titling", 0, 12)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         jLabel4.setText("Proposed Over");
 
+        pO.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         pO.setModel(new javax.swing.SpinnerNumberModel(1, 1, 50, 1));
 
-        jLabel5.setFont(new java.awt.Font("Felix Titling", 0, 12)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         jLabel5.setText("Max Player ");
 
+        mP.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         mP.setModel(new javax.swing.SpinnerNumberModel(2, 2, 11, 1));
 
-        Proceed.setFont(new java.awt.Font("Felix Titling", 0, 12)); // NOI18N
+        Proceed.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         Proceed.setText("Proceed");
         Proceed.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -152,12 +154,12 @@ public class InitializeMatch extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(pO, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE))
+                    .addComponent(pO))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(mP, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 54, Short.MAX_VALUE)
                 .addComponent(Proceed)
                 .addGap(26, 26, 26))
         );

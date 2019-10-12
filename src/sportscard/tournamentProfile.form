@@ -100,16 +100,16 @@
     <Component class="javax.swing.JLabel" name="tournamentName">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Felix Titling" size="14" style="0"/>
+          <Font name="Gadugi" size="14" style="1"/>
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
-        <Property name="text" type="java.lang.String" value="tournament Information"/>
+        <Property name="text" type="java.lang.String" value="Tournament Information"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Felix Titling" size="14" style="0"/>
+          <Font name="Gadugi" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="TournamentID"/>
       </Properties>
@@ -117,7 +117,7 @@
     <Component class="javax.swing.JLabel" name="tid">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Felix Titling" size="12" style="0"/>
+          <Font name="Gadugi" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="tid"/>
       </Properties>
@@ -125,7 +125,7 @@
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Felix Titling" size="14" style="0"/>
+          <Font name="Gadugi" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Team List"/>
       </Properties>
@@ -133,7 +133,7 @@
     <Component class="javax.swing.JButton" name="jButton2">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Felix Titling" size="12" style="1"/>
+          <Font name="Gadugi" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Generate Fixture"/>
       </Properties>
@@ -144,7 +144,7 @@
     <Component class="javax.swing.JButton" name="jButton3">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Felix Titling" size="12" style="1"/>
+          <Font name="Gadugi" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Existing Tournament"/>
       </Properties>
@@ -168,7 +168,7 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jScrollPane1" pref="123" max="32767" attributes="0"/>
+                  <Component id="jScrollPane1" pref="118" max="32767" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -185,10 +185,10 @@
             <Component class="javax.swing.JTable" name="teamTable">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Felix Titling" size="12" style="0"/>
+                  <Font name="Gadugi" size="14" style="1"/>
                 </Property>
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                  <Table columnCount="3" rowCount="4">
+                  <Table columnCount="3" rowCount="1000">
                     <Column editable="true" title="TeamID" type="java.lang.String"/>
                     <Column editable="true" title="TeamName" type="java.lang.String"/>
                     <Column editable="true" title="ShortName" type="java.lang.String"/>

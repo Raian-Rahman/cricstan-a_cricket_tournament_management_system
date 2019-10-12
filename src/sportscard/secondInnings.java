@@ -108,10 +108,10 @@ public class secondInnings extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setFont(new java.awt.Font("Felix Titling", 0, 12)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         jLabel1.setText("Match ID");
 
-        legalButton.setFont(new java.awt.Font("Felix Titling", 0, 12)); // NOI18N
+        legalButton.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         legalButton.setText("Legal Delivery");
         legalButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -119,7 +119,7 @@ public class secondInnings extends javax.swing.JFrame {
             }
         });
 
-        illegalButton.setFont(new java.awt.Font("Felix Titling", 0, 12)); // NOI18N
+        illegalButton.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         illegalButton.setText("NO / WIDE DELIVERY");
         illegalButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -127,32 +127,32 @@ public class secondInnings extends javax.swing.JFrame {
             }
         });
 
-        dismissalButton.setFont(new java.awt.Font("Felix Titling", 0, 12)); // NOI18N
+        dismissalButton.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         dismissalButton.setText("Dismissal");
 
-        runBox.setFont(new java.awt.Font("Felix Titling", 1, 12)); // NOI18N
+        runBox.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         runBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0 RUNs", "1 RUN", "2 RUNs", "3 RUNs", "4 RUNs", "5 RUNs", "6 RUNs", "7 RUNs" }));
 
-        midLabel.setFont(new java.awt.Font("Felix Titling", 1, 12)); // NOI18N
+        midLabel.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
 
-        jLabel2.setFont(new java.awt.Font("Felix Titling", 0, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         jLabel2.setText("Innings");
 
-        inningsLabel.setFont(new java.awt.Font("Felix Titling", 1, 12)); // NOI18N
+        inningsLabel.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         inningsLabel.setText("Second");
 
-        tName.setFont(new java.awt.Font("Felix Titling", 0, 12)); // NOI18N
+        tName.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         tName.setText("team 2");
 
-        jLabel5.setFont(new java.awt.Font("Felix Titling", 0, 12)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         jLabel5.setText("Run");
 
-        cRunLabel.setFont(new java.awt.Font("Felix Titling", 1, 12)); // NOI18N
+        cRunLabel.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
 
-        dismissalBox.setFont(new java.awt.Font("Felix Titling", 1, 12)); // NOI18N
+        dismissalBox.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         dismissalBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "BOWLED", "LEG BEFORE", "CAUGHT", "RUN-OUT", "OTHERS" }));
 
-        jButton2.setFont(new java.awt.Font("Felix Titling", 0, 12)); // NOI18N
+        jButton2.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         jButton2.setText("SUBMIT");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -160,7 +160,7 @@ public class secondInnings extends javax.swing.JFrame {
             }
         });
 
-        wide.setFont(new java.awt.Font("Felix Titling", 1, 12)); // NOI18N
+        wide.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         wide.setText("Wide");
         wide.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -168,7 +168,7 @@ public class secondInnings extends javax.swing.JFrame {
             }
         });
 
-        noball.setFont(new java.awt.Font("Felix Titling", 1, 12)); // NOI18N
+        noball.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         noball.setText("No Ball");
         noball.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -176,7 +176,7 @@ public class secondInnings extends javax.swing.JFrame {
             }
         });
 
-        jButton3.setFont(new java.awt.Font("Felix Titling", 0, 12)); // NOI18N
+        jButton3.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         jButton3.setText("Reset Selection");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -184,30 +184,30 @@ public class secondInnings extends javax.swing.JFrame {
             }
         });
 
-        jLabel6.setFont(new java.awt.Font("Felix Titling", 0, 12)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         jLabel6.setText("Wicket");
 
-        wicketLabel.setFont(new java.awt.Font("Felix Titling", 1, 12)); // NOI18N
+        wicketLabel.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
 
-        jLabel7.setFont(new java.awt.Font("Felix Titling", 0, 12)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         jLabel7.setText("Over");
 
-        overLabel.setFont(new java.awt.Font("Felix Titling", 1, 12)); // NOI18N
+        overLabel.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
 
-        jLabel3.setFont(new java.awt.Font("Felix Titling", 0, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         jLabel3.setText("Target");
 
-        target.setFont(new java.awt.Font("Felix Titling", 1, 12)); // NOI18N
+        target.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
 
-        jLabel8.setFont(new java.awt.Font("Felix Titling", 0, 12)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         jLabel8.setText("Required Run");
 
-        reqrun.setFont(new java.awt.Font("Felix Titling", 1, 12)); // NOI18N
+        reqrun.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
 
-        jLabel9.setFont(new java.awt.Font("Felix Titling", 0, 12)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         jLabel9.setText("Req Run rate");
 
-        rr.setFont(new java.awt.Font("Felix Titling", 0, 12)); // NOI18N
+        rr.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -323,7 +323,7 @@ public class secondInnings extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(rr, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 21, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(runBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(legalButton))

@@ -58,37 +58,37 @@ public class NewTournament extends javax.swing.JFrame {
         mp = new javax.swing.JLabel();
         minimumPlayer = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        tid = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
+        tId = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("NewTournament");
 
-        jLabel1.setFont(new java.awt.Font("Forte", 0, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         jLabel1.setText("Add New Tournament");
 
-        jLabel2.setFont(new java.awt.Font("Forte", 0, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         jLabel2.setText("Tournament Name");
 
-        jLabel4.setFont(new java.awt.Font("Forte", 0, 14)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         jLabel4.setText("Season");
 
-        TeamNo.setFont(new java.awt.Font("Forte", 0, 14)); // NOI18N
+        TeamNo.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         TeamNo.setText("Number of Teams");
 
-        tournamentName.setFont(new java.awt.Font("Leelawadee UI", 0, 14)); // NOI18N
+        tournamentName.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
 
-        Season.setFont(new java.awt.Font("Forte", 0, 14)); // NOI18N
+        Season.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         Season.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SeasonActionPerformed(evt);
             }
         });
 
-        Style.setFont(new java.awt.Font("Forte", 0, 14)); // NOI18N
+        Style.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         Style.setText("Tournament Style");
 
-        SingleGame.setFont(new java.awt.Font("Forte", 0, 14)); // NOI18N
+        SingleGame.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         SingleGame.setText("Single Game");
         SingleGame.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -96,7 +96,7 @@ public class NewTournament extends javax.swing.JFrame {
             }
         });
 
-        HomeandAway.setFont(new java.awt.Font("Forte", 0, 14)); // NOI18N
+        HomeandAway.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         HomeandAway.setText("Home and Away");
         HomeandAway.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -104,7 +104,7 @@ public class NewTournament extends javax.swing.JFrame {
             }
         });
 
-        Knockout.setFont(new java.awt.Font("Forte", 0, 14)); // NOI18N
+        Knockout.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         Knockout.setText("Knockout");
         Knockout.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -129,22 +129,20 @@ public class NewTournament extends javax.swing.JFrame {
             }
         });
 
-        numberofTeams.setFont(new java.awt.Font("Forte", 0, 14)); // NOI18N
+        numberofTeams.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         numberofTeams.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 numberofTeamsActionPerformed(evt);
             }
         });
 
-        mp.setFont(new java.awt.Font("Forte", 0, 14)); // NOI18N
+        mp.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         mp.setText("Minimum Player");
 
-        minimumPlayer.setFont(new java.awt.Font("Forte", 0, 14)); // NOI18N
+        minimumPlayer.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
 
-        jLabel3.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         jLabel3.setText("Tournament ID ");
-
-        tid.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
 
         jButton1.setFont(new java.awt.Font("Felix Titling", 1, 12)); // NOI18N
         jButton1.setText("Validate");
@@ -153,6 +151,8 @@ public class NewTournament extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
+
+        tId.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -205,29 +205,29 @@ public class NewTournament extends javax.swing.JFrame {
                             .addComponent(Season))
                         .addGap(18, 18, 18)
                         .addComponent(jLabel3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(tid, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(56, 56, 56))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(tId, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(43, 43, 43))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(34, 34, 34)
-                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 27, Short.MAX_VALUE)
                 .addGap(30, 30, 30)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(8, 8, 8)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 23, Short.MAX_VALUE))
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(tournamentName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel3)
-                        .addComponent(tid, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(tId, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGap(8, 8, 8)
-                        .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 23, Short.MAX_VALUE))
                     .addComponent(Season, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -241,14 +241,13 @@ public class NewTournament extends javax.swing.JFrame {
                             .addComponent(mp)
                             .addComponent(minimumPlayer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)))
+                .addGap(4, 4, 4)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Style)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(4, 4, 4)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(SingleGame, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(HomeandAway, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(Knockout, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(SingleGame, javax.swing.GroupLayout.DEFAULT_SIZE, 29, Short.MAX_VALUE)
+                        .addComponent(Style))
+                    .addComponent(HomeandAway, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Knockout, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(49, 49, 49)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(reset, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -374,7 +373,7 @@ public class NewTournament extends javax.swing.JFrame {
             {
                 
                 str = newTournament.getTournamentID();
-                tid.setText(str);
+                tId.setText(str);
             }
         }
         
@@ -434,7 +433,7 @@ public class NewTournament extends javax.swing.JFrame {
     private javax.swing.JButton next;
     private javax.swing.JTextField numberofTeams;
     private javax.swing.JButton reset;
-    private javax.swing.JTextField tid;
+    private javax.swing.JLabel tId;
     private javax.swing.JTextField tournamentName;
     // End of variables declaration//GEN-END:variables
 }

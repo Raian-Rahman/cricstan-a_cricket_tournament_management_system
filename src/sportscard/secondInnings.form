@@ -172,7 +172,7 @@
                       <Component id="rr" min="-2" pref="31" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="40" max="32767" attributes="0"/>
+              <EmptySpace pref="21" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="runBox" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="legalButton" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -202,7 +202,7 @@
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Felix Titling" size="12" style="0"/>
+          <Font name="Gadugi" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Match ID"/>
       </Properties>
@@ -210,7 +210,7 @@
     <Component class="javax.swing.JRadioButton" name="legalButton">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Felix Titling" size="12" style="0"/>
+          <Font name="Gadugi" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Legal Delivery"/>
       </Properties>
@@ -221,7 +221,7 @@
     <Component class="javax.swing.JRadioButton" name="illegalButton">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Felix Titling" size="12" style="0"/>
+          <Font name="Gadugi" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="NO / WIDE DELIVERY"/>
       </Properties>
@@ -232,7 +232,7 @@
     <Component class="javax.swing.JRadioButton" name="dismissalButton">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Felix Titling" size="12" style="0"/>
+          <Font name="Gadugi" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Dismissal"/>
       </Properties>
@@ -240,7 +240,7 @@
     <Component class="javax.swing.JComboBox" name="runBox">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Felix Titling" size="12" style="1"/>
+          <Font name="Gadugi" size="14" style="1"/>
         </Property>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
           <StringArray count="8">
@@ -262,14 +262,14 @@
     <Component class="javax.swing.JLabel" name="midLabel">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Felix Titling" size="12" style="1"/>
+          <Font name="Gadugi" size="14" style="1"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Felix Titling" size="12" style="0"/>
+          <Font name="Gadugi" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Innings"/>
       </Properties>
@@ -277,7 +277,7 @@
     <Component class="javax.swing.JLabel" name="inningsLabel">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Felix Titling" size="12" style="1"/>
+          <Font name="Gadugi" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Second"/>
       </Properties>
@@ -285,7 +285,7 @@
     <Component class="javax.swing.JLabel" name="tName">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Felix Titling" size="12" style="0"/>
+          <Font name="Gadugi" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="team 2"/>
       </Properties>
@@ -293,7 +293,7 @@
     <Component class="javax.swing.JLabel" name="jLabel5">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Felix Titling" size="12" style="0"/>
+          <Font name="Gadugi" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Run"/>
       </Properties>
@@ -301,14 +301,14 @@
     <Component class="javax.swing.JLabel" name="cRunLabel">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Felix Titling" size="12" style="1"/>
+          <Font name="Gadugi" size="14" style="1"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JComboBox" name="dismissalBox">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Felix Titling" size="12" style="1"/>
+          <Font name="Gadugi" size="14" style="1"/>
         </Property>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
           <StringArray count="5">
@@ -327,7 +327,7 @@
     <Component class="javax.swing.JButton" name="jButton2">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Felix Titling" size="12" style="0"/>
+          <Font name="Gadugi" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="SUBMIT"/>
       </Properties>
@@ -338,7 +338,7 @@
     <Component class="javax.swing.JRadioButton" name="wide">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Felix Titling" size="12" style="1"/>
+          <Font name="Gadugi" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Wide"/>
       </Properties>
@@ -349,7 +349,7 @@
     <Component class="javax.swing.JRadioButton" name="noball">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Felix Titling" size="12" style="1"/>
+          <Font name="Gadugi" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="No Ball"/>
       </Properties>
@@ -360,7 +360,7 @@
     <Component class="javax.swing.JButton" name="jButton3">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Felix Titling" size="12" style="0"/>
+          <Font name="Gadugi" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Reset Selection"/>
       </Properties>
@@ -371,7 +371,7 @@
     <Component class="javax.swing.JLabel" name="jLabel6">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Felix Titling" size="12" style="0"/>
+          <Font name="Gadugi" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Wicket"/>
       </Properties>
@@ -379,14 +379,14 @@
     <Component class="javax.swing.JLabel" name="wicketLabel">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Felix Titling" size="12" style="1"/>
+          <Font name="Gadugi" size="14" style="1"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel7">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Felix Titling" size="12" style="0"/>
+          <Font name="Gadugi" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Over"/>
       </Properties>
@@ -394,14 +394,14 @@
     <Component class="javax.swing.JLabel" name="overLabel">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Felix Titling" size="12" style="1"/>
+          <Font name="Gadugi" size="14" style="1"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Felix Titling" size="12" style="0"/>
+          <Font name="Gadugi" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Target"/>
       </Properties>
@@ -409,14 +409,14 @@
     <Component class="javax.swing.JLabel" name="target">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Felix Titling" size="12" style="1"/>
+          <Font name="Gadugi" size="14" style="1"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel8">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Felix Titling" size="12" style="0"/>
+          <Font name="Gadugi" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Required Run"/>
       </Properties>
@@ -424,14 +424,14 @@
     <Component class="javax.swing.JLabel" name="reqrun">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Felix Titling" size="12" style="1"/>
+          <Font name="Gadugi" size="14" style="1"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel9">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Felix Titling" size="12" style="0"/>
+          <Font name="Gadugi" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Req Run rate"/>
       </Properties>
@@ -439,7 +439,7 @@
     <Component class="javax.swing.JLabel" name="rr">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Felix Titling" size="12" style="0"/>
+          <Font name="Gadugi" size="14" style="1"/>
         </Property>
       </Properties>
     </Component>

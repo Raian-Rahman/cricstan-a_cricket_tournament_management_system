@@ -5,6 +5,7 @@
  */
 package sportscard;
 
+import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -55,15 +56,15 @@ public class SetInningsAndTeam extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setFont(new java.awt.Font("Felix Titling", 0, 12)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         jLabel1.setText("Match ID");
 
-        midPanel.setFont(new java.awt.Font("Felix Titling", 0, 12)); // NOI18N
+        midPanel.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
 
-        jLabel2.setFont(new java.awt.Font("Felix Titling", 0, 12)); // NOI18N
-        jLabel2.setText("batting first :");
+        jLabel2.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
+        jLabel2.setText("Batting first :");
 
-        Submit.setFont(new java.awt.Font("Felix Titling", 0, 12)); // NOI18N
+        Submit.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         Submit.setText("Submit");
         Submit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -71,7 +72,7 @@ public class SetInningsAndTeam extends javax.swing.JFrame {
             }
         });
 
-        jComboBox1.setFont(new java.awt.Font("Felix Titling", 0, 12)); // NOI18N
+        jComboBox1.setFont(new java.awt.Font("Gadugi", 1, 14)); // NOI18N
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "HOME TEAM", "AWAY TEAM" }));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -99,14 +100,14 @@ public class SetInningsAndTeam extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(21, 21, 21)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(midPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(midPanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(83, 83, 83)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 123, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 118, Short.MAX_VALUE)
                 .addComponent(Submit)
                 .addGap(54, 54, 54))
         );
@@ -131,9 +132,15 @@ public class SetInningsAndTeam extends javax.swing.JFrame {
         } catch (InterruptedException ex) {
             Logger.getLogger(SetInningsAndTeam.class.getName()).log(Level.SEVERE, null, ex);
         }*/
-        frstinningsscore obj = new frstinningsscore(matchID,ht,at,maxWkt,maxOver,sel);
-        obj.setVisible(true);
+        frstinningsscore obj;
+        try {
+            obj = new frstinningsscore(matchID,ht,at,maxWkt,maxOver,sel);
+             obj.setVisible(true);
         dispose();
+        } catch (SQLException ex) {
+            Logger.getLogger(SetInningsAndTeam.class.getName()).log(Level.SEVERE, null, ex);
+        }
+       
     }//GEN-LAST:event_SubmitActionPerformed
 
     /**
